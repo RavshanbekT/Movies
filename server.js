@@ -16,7 +16,7 @@ app.use("/public", express.static("public"));
 ///Routes
 const MovieRouter = require("./routes/MovieRoutes");
 const UserRoutes = require("./routes/UserRoutes");
-
+console.log("hello");
 ///Database
 const Database_local = process.env.DATABASE_LOCAL;
 const port = process.env.PORT | 5000;
