@@ -1,0 +1,106 @@
+@use './variables' as *;
+
+.movie-details__container {
+  width: 100%;
+  height: auto;
+  padding: 2rem 3rem;
+}
+
+.movie-details {
+  width: 100%;
+  height: auto;
+  font-size: 2rem;
+  text-align: center;
+
+  display: flex;
+  justify-content: space-between;
+  &--main-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  &__wrapper-image {
+    flex-basis: 30%;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // background-color: white;
+  }
+  &__wrapper-description {
+    flex-basis: 30%;
+    //  background-color: orangered;
+    text-align: start;
+    &--btn {
+      margin-top: 3rem;
+    }
+    &--heading {
+      margin-top: 1.5rem;
+      margin-bottom: 0.5rem;
+      color: $color-yellow;
+    }
+    &--secondary {
+      margin-top: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    &__quality-box {
+      & > span:not(:first-child) {
+        margin-left: 1rem;
+      }
+    }
+  }
+  &__wrapper-related {
+    flex-basis: 40%;
+    //background-color: greenyellow;
+  }
+}
+
+.movie-details__watch-section {
+  margin-top: 2rem;
+  display: flex;
+}
+.description {
+  &-heading {
+    text-align: center;
+    margin: 1rem 0;
+    span {
+      color: $color-yellow;
+    }
+  }
+  &-text {
+    margin-left: 5rem;
+    width: 50rem;
+    font-size: 1.8;
+    line-height: 2rem;
+  }
+}
+
+.movie-details__cast-section {
+}
+
+.cast-card {
+  width: 15rem;
+  height: 20rem;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+.cast-card img {
+  border-radius: 0.5rem;
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+}
+.cast-card h4 {
+  font-weight: 400;
+}
+
+.comment-section {
+  display: flex;
+  &--left {
+    flex-basis: 50%;
+  }
+  &--right {
+    flex-basis: 50%;
+  }
+}

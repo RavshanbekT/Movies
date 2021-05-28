@@ -1,0 +1,4 @@
+[submodule "app"]
+	path = app
+	url = ./app
+

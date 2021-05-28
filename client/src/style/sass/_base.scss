@@ -1,0 +1,34 @@
+@use '../sass/variables' as *;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  font-weight: 300;
+  font-family: "Roboto", "sans-serif";
+}
+
+body {
+  width: 100%;
+  min-height: 80rem;
+  color: white;
+  font-size: 1.6rem;
+  background-image: linear-gradient(
+    to right bottom,
+    $color-main,
+    $color-secondary
+  );
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  min-height: 70rem;
+}

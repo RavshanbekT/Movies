@@ -1,0 +1,119 @@
+@use './variables' as *;
+
+.flex-nowrap {
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.flex-basis-auto {
+  flex: 0 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+input {
+  outline: none;
+  border: none;
+}
+.margin-top {
+  margin-top: 2rem;
+}
+
+///Button
+.btn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+btn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.btn-primary {
+  width: 14rem;
+  height: 4rem;
+  color: $color-main;
+  background-color: $color-yellow;
+
+  font-size: 1.8rem;
+  font-weight: medium;
+  border-radius: 0.5rem;
+}
+
+.btn-secondary {
+  width: 12rem;
+  height: 3rem;
+
+  font-size: 1.5rem;
+  font-weight: medium;
+  border-radius: 0.5rem;
+}
+.btn-secondary a {
+  color: white;
+  font-weight: 300;
+}
+
+///Select form
+
+.select-form {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: inherit;
+  &--label {
+    color: $color-main;
+    font-weight: 400;
+    font-size: 1.8rem;
+  }
+  &--select {
+    cursor: pointer;
+    padding: 0.3rem 1rem;
+    background: transparent;
+    outline: none;
+    border-radius: 0.5rem;
+    border: 2px solid $color-main;
+  }
+  &--option {
+  }
+}
+
+///stars wrapper
+.star-box {
+}
+
+.stars-outer {
+  position: relative;
+  display: inline-block;
+  &::before {
+    content: "\f005 \f005 \f005 \f005 \f005";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    color: #ccc;
+  }
+}
+.stars-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+
+  &::before {
+    content: "\f005 \f005 \f005 \f005 \f005";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    size: 1rem;
+    color: #f8ce0b;
+  }
+}

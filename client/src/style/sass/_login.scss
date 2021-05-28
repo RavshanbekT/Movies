@@ -1,0 +1,43 @@
+@use './variables' as *;
+
+.login-container {
+  width: 100%;
+  height: 70rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__login-form {
+    width: 45rem;
+    min-height: 35rem;
+    border-radius: 0.5rem;
+    background-color: $color-main;
+
+    &--headline {
+      text-align: center;
+      margin: 3rem;
+      font-size: 3rem;
+      font-weight: 400;
+      color: $color-yellow;
+    }
+    & > input {
+      display: block;
+      margin: 0 auto;
+      width: 80%;
+      height: 4rem;
+      margin-top: 2rem;
+      padding: 0 1rem;
+      border: none;
+      border-radius: inherit;
+      outline: none;
+    }
+    &--email {
+    }
+    &---password {
+    }
+    &--btn {
+      display: block;
+      margin: 2rem auto;
+    }
+  }
+}
